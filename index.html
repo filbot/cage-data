@@ -3,16 +3,27 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>My Website</title>
+        <title>Cage Animation</title>
         <style>
-            #animation img {
-                object-fit: cover;
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            .animation-container {
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #animation {
+                object-fit: fill;
             }
         </style>
     </head>
     <body>
-        <div id="animation">
-            <img src="animation.gif" alt="gif" />
-        </div>
+        <section class="animation-container">
+            <img id="animation" src="animation.gif" alt="gif" />
+        </section>
     </body>
 </html>
