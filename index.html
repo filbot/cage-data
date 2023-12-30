@@ -1,44 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <style>
-        #clock {
-            font-family: monospace;
-            color: orange;
-            text-shadow: 0 0 10px #ffaa00, 0 0 20px #ffaa00, 0 0 30px #ffaa00, 0 0 40px #ffaa00;
-            background: black;
-            width: 700px;
-            height: 740px;
-            line-height: 740px;
-            text-align: center;
-            margin: 0 20px;
-            position: relative;
-            overflow: hidden;
-            font-size: 10vw;
-        }
-        #clock:after {
-            content: '';
-            position: absolute;
-            top: 0; right: 0; bottom: 0; left: 0;
-            background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,255,255,0.1) 3px);
-        }
-    </style>
-</head>
-<body>
-    <div id="clock"></div>
-    <script>
-        function updateTime() {
-            var now = new Date();
-            var hours = now.getHours();
-            var minutes = now.getMinutes();
-            var seconds = now.getSeconds();
-            document.getElementById('clock').textContent = hours + ':' + minutes + ':' + seconds;
-        }
-        setInterval(updateTime, 1000);
-        updateTime();
-    </script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Website</title>
+        <style>
+            #animation img {
+                object-fit: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="animation">
+            <img src="animation.gif" alt="gif" />
+        </div>
+    </body>
 </html>
